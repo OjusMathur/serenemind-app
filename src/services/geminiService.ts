@@ -1,5 +1,5 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { MoodEntry, UserRole } from '../types';
+import { MoodEntry, UserRole } from '../types/index.ts';
 
 class GeminiService {
   private genAI: GoogleGenerativeAI | null = null;

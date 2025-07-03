@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Layout } from './components/layout/Layout';
-import { Dashboard } from './components/dashboard/Dashboard';
-import { MoodCheckIn } from './components/mood/MoodCheckIn';
-import { SelfCareHub } from './components/selfcare/SelfCareHub';
-import { AICompanion } from './components/companion/AICompanion';
-import { HealthTracker } from './components/health/HealthTracker';
-import { Settings } from './components/settings/Settings';
-import { WelcomeScreen } from './components/onboarding/WelcomeScreen';
-import { ViewType, UserRole } from './types';
-import { UserService } from './services/userService';
+import { Layout } from './components/layout/Layout.tsx';
+import { Dashboard } from './components/dashboard/Dashboard.tsx';
+import { MoodCheckIn } from './components/mood/MoodCheckIn.tsx';
+import { SelfCareHub } from './components/selfcare/SelfCareHub.tsx';
+import { AICompanion } from './components/companion/AICompanion.tsx';
+import { HealthTracker } from './components/health/HealthTracker.tsx';
+import { Settings } from './components/settings/Settings.tsx';
+import { WelcomeScreen } from './components/onboarding/WelcomeScreen.tsx';
+import { ViewType, UserRole } from './types/index.ts';
+import { UserService } from './services/userService.ts';
 
 function App() {
   const [activeView, setActiveView] = useState<ViewType>('dashboard');
